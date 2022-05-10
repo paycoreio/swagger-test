@@ -1,0 +1,36 @@
+{
+  "name": "byjg/swagger-test",
+  "description": "A set of tools for test your REST calls based on the swagger documentation using PHPUnit",
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "João Gilberto Magalhães",
+      "email": "joao@byjg.com.br"
+    }
+  ],
+  "require": {
+    "guzzlehttp/guzzle": "6.*",
+    "symfony/yaml":"^3.4|^4.0",
+    "php": ">=7.1"
+  },
+  "require-dev": {
+    "phpunit/phpunit": ">=5.7"
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.3.x-dev"
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "ByJG\\Swagger\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Test\\": "tests/"
+    }
+  }
+}
